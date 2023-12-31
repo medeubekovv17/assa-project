@@ -1,0 +1,85 @@
+.dignity {
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    gap: 72px;
+}
+
+.dignity__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 24px;
+}
+
+.dignity__title-main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+}
+
+.dignity__title-main-txt {
+    line-height: 64px;
+    font-size: 48px;
+}
+
+.dignity__title-main-underline {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+.dignity__title-submain {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    color: #565F59;
+    width: 50%;
+}
+
+.dignity__title-submain-txt span {
+    color: #1CAF4B;
+    text-decoration: underline;
+}
+
+.dignity__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 32px;
+}
+
+.dignity__card_item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 33%;
+    height: 520px;
+    gap: 35px;
+}
+
+.dignity__card_item-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0 20px;
+}
+
+.dignity__card_item-body-title {
+    height: 90px;
+    line-height: 40px;
+    font-size: 24px;
+}
+
+.dignity__card_item-body-text {
+    color: #565F59;
+    font-size: 16px;
+}

@@ -1,0 +1,49 @@
+.presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.presentation__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 100px;
+    color: white;
+    gap: 48px;
+    position: relative;
+}
+
+.presentation__card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+    gap: 24px;
+}
+
+.presentation__card-body-title {
+    line-height: 64px;
+    font-size: 48px;
+}
+
+.presentation__card-body-btn {
+  background-color: white;
+  border-radius: 16px;
+  padding: 12px 32px;
+  color: #1CAF4B;
+  margin-top: 32px;
+}
+
+.presentation__stars-top {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.presentation__stars-bottom {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
