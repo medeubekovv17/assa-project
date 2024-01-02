@@ -20,7 +20,7 @@
     text-align: center;
     justify-content: center;
     position: relative;
-    width: 80%;
+    width: 65%;
 }
 
 .dignity__title-main-txt {
@@ -31,7 +31,7 @@
 .dignity__title-main-underline {
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 3%;
 }
 
 .dignity__title-submain {
@@ -39,6 +39,7 @@
     text-align: center;
     justify-content: center;
     position: relative;
+    font-size: 20px;
     color: #565F59;
     width: 50%;
 }
@@ -60,7 +61,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 33%;
+    width: 30%;
     height: 520px;
     gap: 35px;
 }
@@ -82,4 +83,61 @@
 .dignity__card_item-body-text {
     color: #565F59;
     font-size: 16px;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+    .dignity {
+        padding-top: 100px;
+    }
+
+    .dignity__card {
+        flex-direction: column;
+    }
+
+    .dignity__card_item {
+        width: 55%;
+        height: 548px;
+    }
+
+    .dignity__card_item-body-title {
+        height: 100%;
+    }
+
+    .dignity__title-main {
+        text-align: left;
+        width: 100%;
+    }
+
+    .dignity__title-submain {
+        text-align: left;
+        width: 100%;
+    }
+
+    .dignity__title-main-underline {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 475px) {  
+     .dignity__title-main-txt {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .dignity__title-submain {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .dignity__card_item {
+        width: 100%;
+        height: 540px;
+    }
 }

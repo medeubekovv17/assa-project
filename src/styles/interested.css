@@ -90,3 +90,42 @@
   border: 3px solid #FFFFFF;
   color: #FFFFFF;
 }
+
+@media only screen and (max-width: 768px) {
+    .interested__card {
+        flex-direction: column;
+    }
+
+    .interested__card_item {
+        width: 55%;
+    }
+
+    .interested__title-main-underline {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .interested {
+        gap: 64px;
+    }
+
+    .interested__title-main-txt {
+        line-height: 40px;
+        font-size: 32px;
+    }
+
+    .interested__card_item {
+        width: 100%;
+    }
+
+    .interested__card_item-body-title {
+        height: 20%;
+        font-size: 16px;
+    }
+
+    .interested__card_item-body-btn {
+        margin-top: 16px;
+    }
+
+}

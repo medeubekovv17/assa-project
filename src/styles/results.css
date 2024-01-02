@@ -3,7 +3,7 @@
     flex-direction: column;
     background-color: #001D09;
     gap: 30px;
-    padding-top: 100px;
+    margin-top: 100px;
 }
 
 .results__view-feedbacks {
@@ -49,7 +49,6 @@
     gap: 32px;
     position: relative;
     cursor: pointer;
-    transition: transform 0.5s ease; 
 }
 
 .inactive-bottom {
@@ -92,6 +91,125 @@
 
 .results__view-feedbacks-cards-card-citing-job {
     font-size: 18px;
-     color: #565F59;
+    color: #565F59;
     margin: 0 !important;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .results__view-mobFeedbacks {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 100px 70px;
+    }
+
+    .results__view-mobFeedbacks-title {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        width: 100%;
+        gap: 24px;
+        padding-bottom: 48px;
+    }
+
+    .results__view-mobFeedbacks-cards {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .results__view-mobFeedbacks-cards-card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: 375px;
+        padding: 24px 20px;
+        gap: 32px;
+        position: relative;
+        cursor: pointer;
+        transition: transform 0.5s ease; 
+    }
+
+    .slick-slide {
+        height: 375px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 32px !important;
+    }
+
+    .results__view-mobFeedbacks-cards-card-body {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .results__view-mobFeedbacks-cards-card-forging img {
+        width: 40px;
+        height: 27px;
+    }
+
+    .results__view-mobFeedbacks-cards-card-citing {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .results__view-mobFeedbacks-cards-card-citing-name {
+        font-size: 18px;
+        margin: 0 !important;
+    }
+
+    .results__view-mobFeedbacks-cards-card-citing-job {
+        font-size: 18px;
+        color: #565F59;
+        margin: 0 !important;
+    }
+    .results__view-mobFeedbacks-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .results__view-mobFeedbacks-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 14px 18px;
+        gap: 10px;
+        width: 48px;
+        height: 48px;
+        background: #FFFFFF;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    .results__view-mobFeedbacks-button .arrow-icon {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .slick-slide {
+        height: 100% !important;
+    }
+
+    .results__view-mobFeedbacks {
+        padding: 48px 15px;
+    }
 }

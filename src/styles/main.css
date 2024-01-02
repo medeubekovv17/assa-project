@@ -7,6 +7,7 @@
 @import "interested.css";
 @import "results.css";
 @import "presentation.css";
+@import "footer.css";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;700;800;900&display=swap');
 
 body {
@@ -156,4 +157,26 @@ ul {
 .green-block {
   background: linear-gradient(248.76deg, rgba(248, 255, 122, 0.504) -8.3%, rgba(109, 232, 201, 0.512) -0.74%, rgba(31, 216, 38, 0.512) 81.76%, rgba(248, 255, 122, 0.576) 117.86%);
   border-radius: 24px;
+}
+
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1400px;
+  }
+}
+
+@media only screen and (max-width: 768px) { 
+  .stars__right {
+    display: none;
+  }
+
+  .stars__left {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .container {
+    max-width: 95%;
+  }
 }

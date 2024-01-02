@@ -47,3 +47,21 @@
     bottom: 5%;
     right: 5%;
 }
+
+@media only screen and (max-width: 475px) {
+    .presentation__stars-top {
+        display: none;
+    }
+
+    .presentation__stars-bottom {
+        display: none;
+    }
+
+    .presentation__card {
+        padding: 48px 16px;
+    }
+
+    .presentation__card-body {
+        gap: 48px;
+    }
+}
