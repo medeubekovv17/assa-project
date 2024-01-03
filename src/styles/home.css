@@ -203,10 +203,14 @@
     }
 }
 
-@media only screen and (max-width: 1200px) {  
+@media only screen and (max-width: 1200px) {
     .home__left-desc-title-underline {
         top: 25%;
         left: 0;
+    }
+
+    .header__links-nav {
+        gap: 10px;
     }
 }
 

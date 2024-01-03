@@ -18,19 +18,23 @@
     flex-direction: column;
     position: relative;
     color: white;
-    width: 35%;
+    width: 50%;
     gap: 24px;
 }
 
 .results__view-feedbacks-title-main {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    width: 95%;
+    width: 100%;
 }
 
 .results__view-feedbacks-title-underline {
-    position: absolute;
-    top: 95%;
-    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .results__view-feedbacks-cards {
@@ -100,21 +104,38 @@
 .mobile {
     display: none;
 }
+@media only screen and (min-width: 1440px) {
+    .results__view-feedbacks-title-main {
+        width: 100%;
+    }
 
-@media only screen and (max-width: 1440px) {  
     .results__view-feedbacks-title-underline {
-        top: 95%;
-        left: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1440px) {
+    .results__view-feedbacks-title-main {
+        width: 100%;
+    }
+    .results__view-feedbacks-title-underline {
+        justify-content: end;
+        align-items: end;
+        width: 70%;
     }
 }
 
 @media only screen and (max-width: 1200px) {
-    .results__view-feedbacks-title-underline {
-        top: 95%;
-        left: 0;
-    }
     .results__view-feedbacks-cards-card {
         height: 380px;
+    }
+    .results__view-feedbacks-title-underline {
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100%;
     }
 }
 
@@ -122,16 +143,17 @@
     .results__view-feedbacks-cards-card {
         height: 430px;
     }
+    .results__view-feedbacks-title-underline {
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100%;
+    }
     .active {
         margin: 250px 0;
     }
 }
 
 @media only screen and (max-width: 992px) {
-    .results__view-feedbacks-title-underline {
-        top: 95%;
-        right: 35%;
-    }
 }
 
 @media only screen and (max-width: 768px) {
