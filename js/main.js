@@ -45,3 +45,19 @@ function moveToCenter(element) {
         activeCard.classList.add('inactive-bottom');
     }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+
+    // Найти все кнопки и ссылки с текстом "Оставить заявку" и добавить обработчик события
+    var buttonsAndLinks = document.querySelectorAll('button, a');
+    buttonsAndLinks.forEach(function (element) {
+      if (element.textContent.trim() === 'Оставить заявку') {
+        element.addEventListener('click', function () {
+          myModal.show();
+        });
+      }
+    });
+
+    // Добавьте код для обработки формы, отправки данных и закрытия модального окна
+  });

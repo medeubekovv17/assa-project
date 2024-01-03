@@ -64,7 +64,7 @@
 }
 
 .product__card_item-body-title {
-    height: 64px;
+    min-height: 64px;
     line-height: 32px;
     font-size: 24px;
 }
@@ -103,6 +103,21 @@
 
 .mobile {
     display: none;
+}
+
+@media only screen and (max-width: 1200px) {  
+    .product__card_item-body-title {
+        min-height: 90px;
+    }
+    .product__card_item-body-whiteTitle {
+        min-height: 90px;
+    }
+    .product__card_item-body {
+        height: 250px;
+    }
+    .product__card_item {
+        height: 420px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -183,6 +198,10 @@
     .product__mobcard_bottom_item-body-title {
         line-height: 32px;
         font-size: 24px;
+    }
+
+    .product__mobcard_bottom_item-body-desc {
+        color: #565F59; 
     }
   
     .product__mobcard_bottom_item-body-whiteDesc {

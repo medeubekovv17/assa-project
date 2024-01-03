@@ -66,12 +66,13 @@
 }
 
 .interested__card_item-body-title {
-    height: 80px;
+    min-height: 80px;
     line-height: 40px;
     font-size: 24px;
 }
 
 .interested__card_item-body-desc {
+    min-height: 50px;
     color: #565F59;
     font-size: 16px;
 }
@@ -89,6 +90,26 @@
   background-color: #1CAF4B;
   border: 3px solid #FFFFFF;
   color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1200px) {
+    .interested__card_item-body {
+        height: 380px;
+    }
+    .interested__card_item-body-title {
+        min-height: 120px;
+    }
+    .interested__card_item-body-desc {
+        min-height: 80px;
+    }
+    .interested__card_item-body-btn {
+        background-color: transparent;
+        border: 3px solid #1CAF4B;
+        border-radius: 16px;
+        padding: 12px 32px;
+        color: #1CAF4B;
+        margin-top: 32px;
+    }
 }
 
 @media only screen and (max-width: 768px) {

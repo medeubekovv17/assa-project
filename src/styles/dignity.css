@@ -41,7 +41,7 @@
     position: relative;
     font-size: 20px;
     color: #565F59;
-    width: 50%;
+    width: 55%;
 }
 
 .dignity__title-submain-txt span {
@@ -75,7 +75,7 @@
 }
 
 .dignity__card_item-body-title {
-    height: 90px;
+    min-height: 80px;
     line-height: 40px;
     font-size: 24px;
 }
@@ -87,6 +87,37 @@
 
 .mobile {
     display: none;
+}
+
+@media only screen and (max-width: 1200px) {  
+    .dignity__title-main-underline {
+        top: 45%;
+        left: 10%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .dignity__card {
+        flex-direction: column;
+    }
+
+    .dignity__title-main {
+        width: 100%;
+    }
+
+    .dignity__title-submain {
+        width: 80%;
+    }
+
+    .dignity__title-main-underline {
+        top: 45%;
+        left: 15%;
+    }
+
+    .dignity__card_item {
+        width: 55%;
+        height: 548px;
+    }
 }
 
 @media only screen and (max-width: 768px) {

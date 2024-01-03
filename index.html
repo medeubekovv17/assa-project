@@ -23,24 +23,24 @@
         </div>
       </div>
       <ul class="header__links-nav">
-        <li class="header__links-nav-item"><a href="#dignity" class="nav-link"><span>О нас</span></a></li>
-        <li class="header__links-nav-item"><a href="#product" class="nav-link"><span>Для бизнеса</span></a></li>
-        <li class="header__links-nav-item"><a href="#price" class="nav-link"><span>Стоимость услуги</span></a></li>
-        <li class="header__links-nav-item"><a href="#interested" class="nav-link"><span>Для кого</span></a></li>
+        <li class="header__links-nav-item"><a href="#dignity" class="nav-link regular-txt">О нас</a></li>
+        <li class="header__links-nav-item"><a href="#product" class="nav-link regular-txt">Для бизнеса</a></li>
+        <li class="header__links-nav-item"><a href="#price" class="nav-link regular-txt">Стоимость услуги</a></li>
+        <li class="header__links-nav-item"><a href="#interested" class="nav-link regular-txt">Для кого</a></li>
       </ul>
       <div class="header__links-logo">
         <a class="navbar-brand semi-bold-txt" href="index.html">Assa</a>
       </div>
       <div class="header__links-block">
         <div class="header__links-block-btn">
-          <button type="button">Оставить заявку</button>
+          <button type="button"><span class="semi-bold-txt">Оставить заявку</span></button>
         </div>
       </div>
     </div>
     <div class="header__mobile">
-      <div class="header__mobile-item"><a href="#dignity" class="nav-link"><span>О нас</span></a></div>
-      <div class="header__mobile-item"><a href="#product" class="nav-link"><span>Для бизнеса</span></a></div>
-      <div class="header__mobile-nav-item"><a href="#interested" class="nav-link"><span>Для кого</span></a></div>
+      <div class="header__mobile-item"><a href="#dignity" class="nav-link regular-txt">О нас</a></div>
+      <div class="header__mobile-item"><a href="#product" class="nav-link regular-txt">Для бизнеса</a></div>
+      <div class="header__mobile-nav-item"><a href="#interested" class="nav-link regular-txt">Для кого</a></div>
     </div>
   </nav>
 
@@ -60,7 +60,7 @@
           Программное обеспечение где клиент может сделать заказ без очереди.
         </p>
         <button type="button" class="home__left-desc-btn">
-          <span>Оставить заявку</span>
+          <span class="semi-bold-txt">Оставить заявку</span>
           <img src="img/btn-arrow.svg" alt="btn-arrow">
         </button>
       </div>
@@ -96,7 +96,7 @@
       </div>
       <div class="dignity__title-submain">
         <p class="dignity__title-submain-txt medium-txt">
-          Увеличиваем прибыль на <span>30% - 60%</span> путем сокращения очередей, оптимизацией бизнес-процессов и удобством для клиентов"
+          Увеличиваем прибыль на <span class="semi-bold-txt">30% - 60%</span> путем сокращения очередей, оптимизацией бизнес-процессов и удобством для клиентов"
         </p>
       </div>
     </div>
@@ -149,7 +149,7 @@
     </div>
     <div class="instruction__video container">
       <video class="instruction__video" controls controlslist="nodownload">
-        <source src="../src/video/videoPrototype.mp4" type="video/mp4">
+        <source src="video/videoPrototype.mp4" type="video/mp4">
         Ваш браузер не поддерживает тег video.
       </video>
     </div>
@@ -476,6 +476,38 @@
       </div>
     </div>
   </section>
+
+  <div class="modal" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title semi-bold-txt">Оставить заявку</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Форма с полями ввода -->
+          <form id="applicationForm">
+            <div class="mb-3">
+              <label for="fullName" class="form-label medium-txt">ФИО</label>
+              <input type="text" class="form-control" id="fullName" required>
+            </div>
+            <div class="mb-3">
+              <label for="phoneNumber" class="form-label medium-txt">Номер телефона</label>
+              <input type="tel" class="form-control" id="phoneNumber" required>
+            </div>
+            <div class="mb-3">
+              <label for="selectRole" class="form-label medium-txt">Выберите роль</label>
+              <select class="form-select" id="selectRole" required>
+                <option value="Investor">Инвестор</option>
+                <option value="Business">Бизнес</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-success">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
   <section class="results">

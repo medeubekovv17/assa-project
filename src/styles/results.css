@@ -16,6 +16,7 @@
 .results__view-feedbacks-title {
     display: flex;
     flex-direction: column;
+    position: relative;
     color: white;
     width: 35%;
     gap: 24px;
@@ -23,12 +24,13 @@
 
 .results__view-feedbacks-title-main {
     position: relative;
+    width: 95%;
 }
 
 .results__view-feedbacks-title-underline {
     position: absolute;
     top: 95%;
-    right: 52%;
+    left: 50%;
 }
 
 .results__view-feedbacks-cards {
@@ -97,6 +99,39 @@
 
 .mobile {
     display: none;
+}
+
+@media only screen and (max-width: 1440px) {  
+    .results__view-feedbacks-title-underline {
+        top: 95%;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .results__view-feedbacks-title-underline {
+        top: 95%;
+        left: 0;
+    }
+    .results__view-feedbacks-cards-card {
+        height: 380px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .results__view-feedbacks-cards-card {
+        height: 430px;
+    }
+    .active {
+        margin: 250px 0;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .results__view-feedbacks-title-underline {
+        top: 95%;
+        right: 35%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
