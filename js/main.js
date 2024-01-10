@@ -48,6 +48,23 @@ function moveToCenter(element) {
 
 document.addEventListener('DOMContentLoaded', function () {
     var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+    var applicationForm = document.getElementById('applicationForm');
+    var submitButton = applicationForm.querySelector('button[type="submit"]');
+    var loader = document.querySelector('.spinner');
+
+    applicationForm.addEventListener('submit', function (event) {
+      event.preventDefault(); // Предотвратить отправку формы
+      loader.classList.add('submit');
+      setTimeout(function () {
+        // По завершении обработки формы скройте анимацию загрузки
+        loader.style.display = 'none';
+        // Закройте модальное окно
+        myModal.hide();
+        // Опционально: сбросьте значения полей формы
+        applicationForm.reset();
+      }, 3000); // Пример: подождите 2 секунды, замените на реальный код обработки
+    });
+
 
     // Найти все кнопки и ссылки с текстом "Оставить заявку" и добавить обработчик события
     var buttonsAndLinks = document.querySelectorAll('button, a');
